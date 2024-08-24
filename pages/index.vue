@@ -4,18 +4,18 @@ import MainHeading from "~/components/sections/MainHeading.vue";
 import Testimonials from "~/components/sections/Testimonials.vue";
 import FocusContent from "~/components/sections/FocusContent.vue";
 import Steps from "~/components/sections/Steps.vue";
+import Footer from "~/layouts/footer.vue";
 </script>
 
 <template>
   <div>
     <Header />
-
+    
     <MainHeading />
-
     <Testimonials />
-
     <Steps />
-
     <FocusContent />
+
+    <Footer />
   </div>
 </template>
