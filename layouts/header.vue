@@ -1,3 +1,6 @@
+<script setup>
+import companyLogo from "~/components/ui/companyLogo.vue";
+</script>
 <template>
   <section
     class="relative bg-custom-gradient h-[60vh] w-full md:h-[60vh] flex flex-col items-center justify-center text-center"
