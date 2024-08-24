@@ -1,26 +1,29 @@
 <script setup>
 import companyLogo from "~/components/ui/companyLogo.vue";
+import ButtonCompo from "~/components/ui/ButtonCompo.vue";
 </script>
 <template>
   <section
-    class="relative bg-custom-gradient h-[60vh] w-full md:h-[60vh] flex flex-col items-center justify-center text-center"
+    class="bg-custom-gradient h-[60vh] w-full flex flex-col p-8 md:flex-row"
   >
-    <div class="absolute left-[10%] top-[10%] md:left-[20%] md:top-[10%]">
+    <div
+      class="flex-1 flex justify-start items-start md:justify-end md:items-start"
+    >
       <companyLogo />
     </div>
 
     <div
-      class="text-white font-extrabold text-center font-mulish text-[30px] leading-[45px] md:text-[50px] md:leading-[80px] mb-4"
+      class="flex-1 justify-center items-center flex md:justify-center md:items-end text-white font-extrabold text-center font-mulish text-[30px] leading-[45px] md:text-[50px] md:leading-[80px]"
     >
       Zvýšte svoje zisky <br />
       optimalizáciou vášho <br />
       eshopu.
     </div>
 
-    <button
-      class="bg-secondary text-white font-muli font-bold py-2 px-3 rounded-[5px] md:absolute md:left-[70%] md:top-[8%] mt-4"
+    <div
+      class="flex-1 flex justify-center items-center md:justify-start md:items-start"
     >
-      Mám záujem o UX audit
-    </button>
+      <ButtonCompo width="w-1/2" />
+    </div>
   </section>
 </template>
