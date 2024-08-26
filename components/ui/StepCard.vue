@@ -28,7 +28,6 @@ import TwoColumnLayout from "~/layouts/TwoColumnLayout.vue";
     <template v-slot:[computedSection2Slot]>
       <!-- Content for Section 2 -->
       <div
-        class="bg-blue-100"
         :class="{
           'flex items-end justify-end': isSwitched,
           'flex items-start justify-start': !isSwitched,

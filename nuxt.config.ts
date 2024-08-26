@@ -17,4 +17,7 @@ export default defineNuxtConfig({
   vite: {
     assetsInclude: ['**/*.PNG'], 
   },
+  plugins: [
+    '~/plugins/vue-toastification.js',
+  ],
 })

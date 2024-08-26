@@ -7,7 +7,7 @@
         'order-1 lg:order-1': !reverseOrder,
         'hidden lg:block': hideArrowSection && computedSection2Slot === 'section1',
       }"
-      class="w-full lg:w-1/2 flex lg:grid lg:grid-cols-12 items-center justify-center p-4"
+      class="mb-4 w-full lg:w-1/2 flex lg:grid lg:grid-cols-12 items-center justify-center p-4"
     >
       <div class="w-full lg:col-start-7 lg:col-span-12">
         <slot name="section1"></slot>
@@ -21,7 +21,7 @@
         'order-2 lg:order-2': !reverseOrder,
         'hidden lg:block': hideArrowSection && computedSection2Slot === 'section2',
       }"
-      class="w-full lg:w-1/2 flex lg:grid lg:grid-cols-12 p-4 items-center justify-center"
+      class="mb-4 w-full lg:w-1/2 flex lg:grid lg:grid-cols-12 p-4 items-center justify-center"
     >
       <div class="w-full lg:col-start-1 lg:col-span-6">
         <slot name="section2"></slot>

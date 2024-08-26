@@ -6,7 +6,7 @@ import ButtonCompo from "~/components/ui/ButtonCompo.vue";
 
 <template>
     
-    <TwoColumnLayout>
+    <TwoColumnLayout :reverseOrder="true">
       <template #section1>
         <!-- Content for Section 1 -->
         <div
@@ -28,8 +28,8 @@ import ButtonCompo from "~/components/ui/ButtonCompo.vue";
           <div
             class="text-black text-left font-muli text-[26px] leading-[40px]"
           >
-            Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu pomocou UX
-            auditu.
+            Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu <span class="font-extrabold"> pomocou UX
+              auditu.</span>
           </div>
           <ButtonCompo />
         </div>
