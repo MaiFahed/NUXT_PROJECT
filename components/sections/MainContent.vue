@@ -6,15 +6,15 @@ import QRcode from "../ui/QRcode.vue";
 </script>
 
 <template>
-  <TwoColumnLayout :reverseOrder="true">
+  <TwoColumnLayout :reverseOrder="true" margin="lg:mt-20 lg:mb-12">
     <template #section1>
-      <div
-        class="text-black font-extrabold text-left font-mulish text-[30px] leading-[44px] md:text-[45px] md:leading-[60px] mb-4 mt-4">
+      <h2
+        class="text-black font-extrabold text-left font-mulish text-[30px] leading-[44px] md:text-[45px] md:leading-[60px]">
         Rýchle <span class="border-b-[14px] border-pink-200">výsledky</span>
         <br />
         pomocou UX <br class="hidden md:block" />
         audit.
-      </div>
+    </h2>
     </template>
     <template #section2>
       <!-- Content for Section 2 -->
@@ -31,10 +31,10 @@ import QRcode from "../ui/QRcode.vue";
     <template #section1>
       <div class="text-black text-left font-muli text-[20px] leading-[40px] md:text-[24px]">
         UX auditom vášho riešenia lepšie <br />
-        pochopíte, ako vaši zákazníci používajú <br />
+        pochopíte, ako vaši zákazníci používajú
         váš produkt,
         <span class="font-extrabold">
-          zvýšite ich spokojnosť <br />
+          zvýšite ich spokojnosť 
           a hlavne vaše zisky.</span>
       </div>
     </template>
@@ -55,7 +55,7 @@ import QRcode from "../ui/QRcode.vue";
 
 
 
-  <TwoColumnLayout>
+  <TwoColumnLayout margin="lg:mt-20 lg:mb-32">
     <template #section1>
       <div class="text-black text-left font-muli text-[20px] leading-[40px] md:text-[22px]">
         Dosiahnite lepšie výsledky vašej webstránky alebo e-shopu

@@ -6,9 +6,8 @@ import ButtonCompo from "~/components/ui/ButtonCompo.vue";
 
 <template>
     
-    <TwoColumnLayout :reverseOrder="true">
+    <TwoColumnLayout :reverseOrder="true" margin="lg:mt-24"  :hideSection2="true">
       <template #section1>
-        <!-- Content for Section 1 -->
         <div
           class="text-black font-extrabold text-left font-mulish text-[32px] leading-[44px] md:text-[40px] md:leading-[60px] mb-4 mt-4"
         >
@@ -16,14 +15,10 @@ import ButtonCompo from "~/components/ui/ButtonCompo.vue";
           <span class="border-b-[14px] border-pink-200">najdôležitejšie.</span>
         </div>
       </template>
-      <template #section2>
-        <div></div>
-      </template>
     </TwoColumnLayout>
 
-    <TwoColumnLayout :reverseOrder="true">
+    <TwoColumnLayout :reverseOrder="true" margin="mb-20 lg:mb-52">
       <template #section1>
-        <!-- Content for Section 1 -->
         <div class="flex flex-col gap-10">
           <div
             class="text-black text-left font-muli text-[26px] leading-[40px]"
@@ -35,7 +30,6 @@ import ButtonCompo from "~/components/ui/ButtonCompo.vue";
         </div>
       </template>
       <template #section2>
-        <!-- Content for Section 2 -->
         <div>
           <ul class="space-y-6">
             <IconListItem> Informačnú architektúru a štruktúru </IconListItem>

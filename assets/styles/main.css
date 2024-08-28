@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
 
+
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .mandatoryField {
-    color: #EE325C;
+  color: #ee325c;
 }
 
-  
-  
+

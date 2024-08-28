@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { useToast } from "vue-toastification";
+import SubmitButton from "./SubmitButton.vue";
 
 const toast = useToast();
 
@@ -10,16 +11,14 @@ const handleSubmit = (event) => {
   event.preventDefault();
 
   if (!formSubmitted.value) {
-    toast.error('There was an error submitting the form.');
+    toast.error("There was an error submitting the form.");
   } else {
-    toast.success('Your form has been submitted successfully!');
+    toast.success("Your form has been submitted successfully!");
     props.close();
   }
 
   formSubmitted.value = true;
-
 };
-
 
 const props = defineProps({
   close: Function,
@@ -31,92 +30,67 @@ const props = defineProps({
     <div class="mb-4">
       <label
         for="first_name"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        class="block mb-2 font-mulish text-base font-dark"
       >
-        Meno <span class="mandatoryField">*</span>
+        Meno: <span class="mandatoryField">*</span>
       </label>
       <input
         type="text"
         id="first_name"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        placeholder="John"
+        class="bg-gray text-sm rounded-lg block w-full p-2.5"
         required
       />
     </div>
 
     <div class="grid gap-6 mb-4 md:grid-cols-2">
       <div>
-        <label
-          for="email"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >
-          E-mail <span class="mandatoryField">*</span>
+        <label for="email" class="block mb-2 font-mulish text-base font-dark">
+          E-mail: <span class="mandatoryField">*</span>
         </label>
         <input
           type="email"
           id="email"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="john.doe@company.com"
+          class="bg-gray text-sm rounded-lg block w-full p-2.5"
           required
         />
       </div>
       <div>
-        <label
-          for="phone"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >
-          Phone number <span>*</span>
+        <label for="phone" class="block mb-2 font-mulish text-base font-dark">
+          Tel. číslo:
         </label>
         <input
           type="tel"
           id="phone"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="123-45-678"
-          required
+          class="bg-gray text-sm rounded-lg block w-full p-2.5"
         />
       </div>
     </div>
 
     <div class="mb-4">
-      <label
-        for="website"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      >
-        Webstránka <span class="mandatoryField">*</span>
+      <label for="website" class="block mb-2 font-mulish text-base font-dark">
+        Webstránka:
       </label>
       <input
         type="url"
         id="website"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        placeholder="flowbite.com"
-        required
+        class="bg-gray text-sm rounded-lg block w-full p-2.5"
       />
     </div>
 
     <div class="mb-4">
-      <label
-        for="notes"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      >
-        Poznámka
+      <label for="notes" class="block mb-2 font-mulish text-base font-dark">
+        Poznámka: <span class="mandatoryField">*</span>
       </label>
-      
+
       <textarea
         id="notes"
         rows="4"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="bg-gray placeholder-lightGray text-sm rounded-lg block w-full p-2.5"
         placeholder="Je niečo čo by ste sa nás chceli spýtat?"
+        required
       ></textarea>
     </div>
 
-    
-
-    <button
-      type="submit"
-      class="bg-secondary text-white font-muli font-bold py-4 w-full rounded-[5px] hover:bg-pink-500 w-full text-center"
-    >
-      Kontaktujte ma
-    </button>
-
+    <SubmitButton />
   </form>
 </template>

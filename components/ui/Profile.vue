@@ -8,10 +8,10 @@
       />
     </div>
     <div class="ml-4">
-      <p class="text-black font-semibold">{{ profileName }}</p>
-      <p class="text-gray-500">
+      <p class="font-muli text-base font-black leading-tight text-dark">{{ profileName }}</p>
+      <p class="font-muli text-base font-normal leading-tight text-dark">
         {{ profileJob }}
-        <span class="text-pink-500"> {{ profileWebsite }}</span>
+        <span class="text-secondary font-bold"> {{ profileWebsite }}</span>
       </p>
     </div>
   </div>

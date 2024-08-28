@@ -2,7 +2,7 @@
 import Profile from "./Profile.vue";
 </script>
 <template>
-  <div class="relative border border-gray-300 p-6 rounded-lg">
+  <div class="relative border border-lighterGray p-6 rounded-lg mb-5">
     <img
       src="~/assets/images/quote.png"
       alt="Testimonial Image"
@@ -10,10 +10,10 @@ import Profile from "./Profile.vue";
     />
     <div class="flex items-start">
       <p
-        class="font-muli text-gray-800 text-base font-normal leading-8 text-left"
+        class="font-muli text-dark text-base font-normal leading-8 text-left"
       >
         {{ testimonialText }}
-        <span class="text-red-500 font-semibold">čítať viac</span>
+        <span class="text-secondary font-semibold">čítať viac</span>
       </p>
     </div>
   </div>

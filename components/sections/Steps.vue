@@ -2,7 +2,7 @@
 import StepCard from "../ui/StepCard.vue";
 </script>
 <template>
-  <div class="flex justify-start p-4 lg:justify-center lg:items-center">
+  <div class="flex justify-start lg:mb-24 lg:justify-center lg:items-center p-4 lg:p-0">
     <div
       class="text-black font-extrabold text-left lg:text-center font-mulish text-[32px] leading-[44px] md:text-[40px] md:leading-[60px]"
     >

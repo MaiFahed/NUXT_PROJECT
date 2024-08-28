@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Header from "~/layouts/header.vue";
-import MainHeading from "~/components/sections/MainHeading.vue";
+import Header from "~/components/sections/header.vue";
+import MainHeading from "~/components/sections/MainContent.vue";
 import Testimonials from "~/components/sections/Testimonials.vue";
 import FocusContent from "~/components/sections/FocusContent.vue";
 import Steps from "~/components/sections/Steps.vue";
-import Footer from "~/layouts/footer.vue";
+import Footer from "~/components/sections/footer.vue";
 </script>
 
 <template>

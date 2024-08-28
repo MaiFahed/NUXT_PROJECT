@@ -2,12 +2,11 @@
 import TwoColumnLayout from "~/layouts/TwoColumnLayout.vue";
 </script>
 <template>
-  <TwoColumnLayout
+  <TwoColumnLayout margin="lg:mb-10"
     :hideArrowSection="true"
     :computedSection2Slot="computedSection2Slot"
   >
     <template v-slot:[computedSection1Slot]>
-      <!-- Content for Section 1 -->
       <div class="flex items-center justify-start gap-4 lg:justify-between">
         <img
           :src="`/images/${imageNumber}`"
@@ -26,7 +25,6 @@ import TwoColumnLayout from "~/layouts/TwoColumnLayout.vue";
     </template>
 
     <template v-slot:[computedSection2Slot]>
-      <!-- Content for Section 2 -->
       <div
         :class="{
           'flex items-end justify-end': isSwitched,
