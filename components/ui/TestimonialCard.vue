@@ -13,7 +13,7 @@ import Profile from "./Profile.vue";
         class="font-muli text-dark text-base font-normal leading-8 text-left"
       >
         {{ testimonialText }}
-        <span class="text-secondary font-semibold">čítať viac</span>
+        <span class="text-secondary font-semibold hover:text-pink-500 cursor-pointer">čítať viac</span>
       </p>
     </div>
   </div>
